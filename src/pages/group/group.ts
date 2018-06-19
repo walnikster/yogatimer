@@ -19,7 +19,7 @@ export class GroupPage {
     this.index = this.navParams.get("index")
   }
 
-  onEditGroup() {
+  onEditTimergroup() {
     this.navCtrl.push(EditGroupPage, {
       mode: "Edit",
       group: this.group,
@@ -27,7 +27,7 @@ export class GroupPage {
     })
   }
 
-  onDeleteGroup() {
+  onDeleteTimergroup() {
     this.navCtrl.popToRoot()
   }
 }
