@@ -1,14 +1,15 @@
 import { EditGroupPage } from "./../edit-group/edit-group"
 import { Group } from "./../../models/group"
-import { Component } from "@angular/core"
+import { Component, OnInit } from "@angular/core"
 import { IonicPage, NavController, NavParams } from "ionic-angular"
+import { reorderArray } from "ionic-angular"
 
 @IonicPage()
 @Component({
   selector: "page-group",
   templateUrl: "group.html"
 })
-export class GroupPage {
+export class GroupPage implements OnInit {
   group: Group
   index: number
 
@@ -29,5 +30,9 @@ export class GroupPage {
 
   onDeleteTimergroup() {
     this.navCtrl.popToRoot()
+  }
+
+  reorderItems(indexes) {
+    this.group.timers = reorderArray(this.group.timers, indexes)
   }
 }

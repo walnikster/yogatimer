@@ -1,3 +1,4 @@
+import { Timer } from "./../../models/timer"
 import { Group } from "./../../models/group"
 import { HttpClient } from "@angular/common/http"
 import { Injectable } from "@angular/core"
@@ -5,9 +6,8 @@ import { Observable } from "rxjs/Observable"
 
 @Injectable()
 export class GroupsProvider {
-  constructor(public http: HttpClient) {
-    console.log("Hello GroupsProvider Provider")
-  }
+  timers: Timer[]
+  constructor(public http: HttpClient) {}
 
   public getGroups(): Observable<Group[]> {
     return this.http.get<Group[]>(

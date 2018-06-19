@@ -21,7 +21,7 @@
     </ion-row>
     <ion-row>
       <ion-col>
-        <ion-list>
+        <ion-list reorder="true" (ionItemReorder)="$event.applyTo(group.timers)">
           <ion-item *ngFor="let timer of group.timers">
             {{ timer.name }}
           </ion-item>
