@@ -47,7 +47,9 @@ export class GroupsPage {
   ionViewDidLoad() {
     this.groupsProvider.getGroups().subscribe(grps => {
       this.groups = grps
-      this.groups.forEach(x => (x.timers = this.timers))
+      this.groups.forEach(x => {
+        x.timers = this.timers.slice(0)
+      })
     })
   }
 
