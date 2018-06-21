@@ -23,21 +23,21 @@ export class GroupsPage {
       id: 6,
       isRunning: false,
       isRecording: false,
-      name: "tmer 1",
+      name: "timer 1",
       duration: 5000
     }
     this.timers[1] = {
       id: 6,
       isRunning: false,
       isRecording: false,
-      name: "tmer 2",
+      name: "timer 2",
       duration: 5500
     }
     this.timers[2] = {
       id: 16,
       isRunning: false,
       isRecording: false,
-      name: "tmer 3",
+      name: "timer 3",
       duration: 4000
     }
   }

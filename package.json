@@ -1,8 +1,8 @@
 {
   "name": "yogatimer",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "author": "Niki W.",
+  "homepage": "http://yogatimer.uleos.com",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
@@ -41,7 +41,7 @@
     "@ionic/app-scripts": "3.1.9",
     "typescript": "~2.6.2"
   },
-  "description": "An Ionic project",
+  "description": "Yogatimer",
   "cordova": {
     "plugins": {
       "cordova-plugin-whitelist": {},

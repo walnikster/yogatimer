@@ -3,7 +3,5 @@ import { Injectable } from "@angular/core"
 
 @Injectable()
 export class GroupProvider {
-  constructor(public http: HttpClient) {
-    console.log("Hello GroupProvider Provider")
-  }
+  constructor(public http: HttpClient) {}
 }
