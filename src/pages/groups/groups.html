@@ -16,9 +16,6 @@
 
   <ion-list>
     <button ion-item *ngFor='let group of groups; let i = index' (click)="onLoadTimergroup(group, i)">
-      <ion-avatar item-start>
-        <img src='{{group.icon}}'>
-      </ion-avatar>
       <h2>{{group.name}}</h2>
       <p>{{group.id}}</p>
     </button>

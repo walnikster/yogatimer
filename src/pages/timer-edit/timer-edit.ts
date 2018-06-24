@@ -3,13 +3,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular'
 
 @IonicPage()
 @Component({
-  selector: 'page-settings',
-  templateUrl: 'settings.html'
+  selector: 'page-timer-edit',
+  templateUrl: 'timer-edit.html'
 })
-export class SettingsPage {
+export class TimerEditPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SettingsPage')
+    console.log('ionViewDidLoad TimerEditPage')
   }
 }

@@ -1,7 +1,9 @@
-export interface Timer {
-  id: number
-  isRunning: boolean
-  isRecording: boolean
-  name: string
-  duration: number
+export class Timer {
+  constructor(
+    public id: number,
+    public isRunning: boolean,
+    public isRecording: boolean,
+    public name: string,
+    public duration: number
+  ) {}
 }

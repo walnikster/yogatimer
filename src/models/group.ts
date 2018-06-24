@@ -1,8 +1,10 @@
-import { Timer } from "./timer"
+import { Timer } from './timer'
 
-export interface Group {
-  id: number
-  name: string
-  icon: string
-  timers: Timer[]
+export class Group {
+  constructor(
+    public id: number,
+    public name: string,
+    public icon: string,
+    public timers: Timer[]
+  ) {}
 }
