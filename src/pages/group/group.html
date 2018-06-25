@@ -20,6 +20,16 @@
       </ion-col>
     </ion-row>
     <ion-row>
+      <ion-col>Timers
+        <ion-fab>
+
+          <button ion-fab mini icon-only (click)="onNewTimer()">
+            <ion-icon name="add"></ion-icon>
+          </button>
+        </ion-fab>
+      </ion-col>
+    </ion-row>
+    <ion-row>
       <ion-col>
         <ion-list reorder="true" (ionItemReorder)="$event.applyTo(group.timers)">
           <ion-item *ngFor="let timer of group.timers">

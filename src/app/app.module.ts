@@ -1,3 +1,4 @@
+import { TimerEditPage } from './../pages/timer-edit/timer-edit'
 import { EditGroupPage } from './../pages/edit-group/edit-group'
 import { SettingsPage } from './../pages/settings/settings'
 import { TabsPage } from './../pages/tabs/tabs'
@@ -11,7 +12,6 @@ import { StatusBar } from '@ionic-native/status-bar'
 
 import { MyApp } from './app.component'
 import { HomePage } from '../pages/home/home'
-import { TimerPage } from '../pages/timer/timer'
 import { GroupProvider } from '../providers/group/group'
 import { IonicStorageModule } from '@ionic/storage'
 
@@ -23,7 +23,7 @@ import { IonicStorageModule } from '@ionic/storage'
     GroupsPage,
     GroupPage,
     SettingsPage,
-    TimerPage,
+    TimerEditPage,
     EditGroupPage
   ],
   imports: [
@@ -37,7 +37,7 @@ import { IonicStorageModule } from '@ionic/storage'
     HomePage,
     GroupsPage,
     GroupPage,
-    TimerPage,
+    TimerEditPage,
     TabsPage,
     SettingsPage,
     EditGroupPage

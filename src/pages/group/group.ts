@@ -1,3 +1,4 @@
+import { TimerEditPage } from './../timer-edit/timer-edit'
 import { GroupProvider } from './../../providers/group/group'
 import { EditGroupPage } from './../edit-group/edit-group'
 import { Group } from './../../models/group'
@@ -36,6 +37,14 @@ export class GroupPage implements OnInit {
   onDeleteTimergroup() {
     this.groupProvider.removeGroup(this.index)
     this.navCtrl.popToRoot()
+  }
+
+  onNewTimer() {
+    this.navCtrl.push(TimerEditPage, {
+      mode: 'New',
+      index: this.index,
+      group: this.group
+    })
   }
 
   reorderItems(indexes) {
